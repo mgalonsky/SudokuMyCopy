@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5418F519C376ED0041F7B4 /* MGSTGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5418F419C376ED0041F7B4 /* MGSTGridView.m */; };
+		7F5418F819C379230041F7B4 /* MGSTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5418F719C379230041F7B4 /* MGSTButton.m */; };
 		7FA760F419C24807001F8CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA760F319C24807001F8CFF /* Foundation.framework */; };
 		7FA760F619C24807001F8CFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA760F519C24807001F8CFF /* CoreGraphics.framework */; };
 		7FA760F819C24807001F8CFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA760F719C24807001F8CFF /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F5418F319C376ED0041F7B4 /* MGSTGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSTGridView.h; sourceTree = "<group>"; };
+		7F5418F419C376ED0041F7B4 /* MGSTGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSTGridView.m; sourceTree = "<group>"; };
+		7F5418F619C379230041F7B4 /* MGSTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSTButton.h; sourceTree = "<group>"; };
+		7F5418F719C379230041F7B4 /* MGSTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSTButton.m; sourceTree = "<group>"; };
 		7FA760F019C24807001F8CFF /* Sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sudoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA760F319C24807001F8CFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7FA760F519C24807001F8CFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +123,10 @@
 				7FA7610519C24807001F8CFF /* Main.storyboard */,
 				7FA7610819C24807001F8CFF /* MGSTViewController.h */,
 				7FA7610919C24807001F8CFF /* MGSTViewController.m */,
+				7F5418F619C379230041F7B4 /* MGSTButton.h */,
+				7F5418F719C379230041F7B4 /* MGSTButton.m */,
+				7F5418F319C376ED0041F7B4 /* MGSTGridView.h */,
+				7F5418F419C376ED0041F7B4 /* MGSTGridView.m */,
 				7FA7610B19C24807001F8CFF /* Images.xcassets */,
 				7FA760FA19C24807001F8CFF /* Supporting Files */,
 			);
@@ -251,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA7610019C24807001F8CFF /* main.m in Sources */,
+				7F5418F519C376ED0041F7B4 /* MGSTGridView.m in Sources */,
 				7FA7610419C24807001F8CFF /* MGSTAppDelegate.m in Sources */,
+				7F5418F819C379230041F7B4 /* MGSTButton.m in Sources */,
 				7FA7610A19C24807001F8CFF /* MGSTViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +475,7 @@
 				7FA7612419C24807001F8CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FA7612519C24807001F8CFF /* Build configuration list for PBXNativeTarget "SudokuTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +484,7 @@
 				7FA7612719C24807001F8CFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
