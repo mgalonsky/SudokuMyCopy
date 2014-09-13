@@ -41,7 +41,7 @@ int initialGrid[9][9]={
     CGFloat size = CGRectGetWidth(frame)*.8;
     CGRect gridFrame = CGRectMake(x, y, size, size);
     
-    _gridView = [[MGSTGridView alloc] initWithFrame:gridFrame];
+    _gridView = [[MGSTGridView alloc] initWithFrame:gridFrame andSudokuArray:initialGrid];
     _gridView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:_gridView];
     

@@ -12,7 +12,6 @@
 const int CELL_SIZE = 15;
 const int CELL_PADDING = 2;
 const int GRID_PADDING = 5;
-const int NUM_BUTTONS = 9;
 
 @implementation MGSTGridView {
     NSMutableArray* _buttons;
@@ -28,11 +27,22 @@ const int NUM_BUTTONS = 9;
         CGFloat y = GRID_PADDING;
         for (int i = 0; i < NUM_BUTTONS; i++) {
             for (int j = 0; j < NUM_BUTTONS; j++) {
-                
+                CGRect frame = CGRectMake(x, y, CELL_SIZE, CELL_SIZE);
+                MGSTButton* button = [[MGSTButton alloc] initWithFrame:frame andNumber:intArray[i][j]];
+                button.backgroundColor = [UIColor whiteColor];
+                button.tag = [self calculateIndexFromColumn:i andRow:j];
+                NSLog(@"Added button %d", button.tag);
+                [self addSubview:button];
+                [_buttons addObject:button];
             }
         }
     }
     return self;
+}
+
+- (int)calculateIndexFromColumn:(int)column andRow:(int)row
+{
+    return column*NUM_BUTTONS+row;
 }
 
 /*

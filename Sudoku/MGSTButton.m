@@ -8,9 +8,11 @@
 
 #import "MGSTButton.h"
 
-@implementation MGSTButton
+@implementation MGSTButton {
+    int _number;
+}
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame andNumber:(int)number
 {
     self = [super initWithFrame:frame];
     if (self) {

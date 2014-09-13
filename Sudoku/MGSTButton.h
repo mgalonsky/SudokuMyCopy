@@ -10,4 +10,6 @@
 
 @interface MGSTButton : UIView
 
+- (id)initWithFrame:(CGRect)frame andNumber:(int)number;
+
 @end

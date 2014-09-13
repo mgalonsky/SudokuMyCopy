@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+static const int NUM_BUTTONS = 9;
+
 @interface MGSTGridView : UIView
+
+- (id)initWithFrame:(CGRect)frame andSudokuArray:(int[NUM_BUTTONS][NUM_BUTTONS])intArray;
 
 @end
