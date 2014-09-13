@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MGSTButton : UIView
+@interface MGSTButton : UIButton
 
 - (id)initWithFrame:(CGRect)frame andNumber:(int)number;
 

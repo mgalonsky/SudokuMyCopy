@@ -42,20 +42,9 @@ int initialGrid[9][9]={
     CGRect gridFrame = CGRectMake(x, y, size, size);
     
     _gridView = [[MGSTGridView alloc] initWithFrame:gridFrame andSudokuArray:initialGrid];
+    // [_gridView addTarget:self action:@selector(buttonPressed:) forControlEvents:]
     _gridView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:_gridView];
-    
-    
-    
-    // Create button
-//    CGRect frame = self.view.frame;
-//    CGRect buttonFrame = CGRectMake(CGRectGetWidth(frame)*.5, CGRectGetHeight(frame)*.5, 50, 50);
-//    _button = [[UIButton alloc] initWithFrame:buttonFrame];
-//    _button.backgroundColor = [UIColor blueColor];
-//    _button.tag = 1;
-//    [self.view addSubview:_button];
-//    
-//    [_button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning

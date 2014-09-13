@@ -17,6 +17,13 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.backgroundColor = [UIColor whiteColor];
+        
+        if (number != 0) {
+            NSString* buttonNum = [NSString stringWithFormat:@"%d", number];
+            [self setTitle:buttonNum forState:UIControlStateNormal];
+            [self setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        }
     }
     return self;
 }
